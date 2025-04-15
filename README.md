@@ -27,3 +27,7 @@ Hier geht's zu meinem Kanal / Playlist
 
 > https://www.youtube.com/playlist?list=PLluslK6uBf4tvNbPWs3V3HMyiCLah0W0u
 
+## 6h+ Online Kurs
+Entdecke meinen umfassenden Kurs mit Schritt-für-Schritt-Anleitungen, vielen Praxisbeispielen und Hintergrundwissen rund um LVGL und Touchdisplays mit dem ESP32. Perfekt zum Lernen und direkt Mitmachen!
+
+👉 Jetzt reinschauen: https://pixeledi.teachable.com/p/lvgl-und-esp32-touchdisplays
