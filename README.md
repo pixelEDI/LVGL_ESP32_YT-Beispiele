@@ -4,6 +4,9 @@ In diesem Repository sammle ich Beispielprojekte, die ich in meinen YouTube-Vide
 
 Ziel ist es, leicht verständliche und funktionierende Sketches bereitzustellen, die als Grundlage oder Inspiration für eigene Projekte dienen können.
 
+### LVGL Dokumentation
+> https://docs.lvgl.io/master/index.html
+
 ## Inhalt
 
 - 📺 Begleitmaterial zu meinen YouTube-Videos  
@@ -21,6 +24,12 @@ Im Ordner `00_config_cyd` findest du die lv_conf.h. Diese muss in den libraries-
 - Display mit Touch (z.B. ILI9341)
 - Entwicklungsumgebung: Arduino IDE
 - Installierte LVGL-Bibliothek
+
+# EEZ-Studio
+Tolles Tool zum Gestalten von Dashboards mit LVGL Widgets
+
+- https://www.envox.eu/
+- https://github.com/eez-open/studio
 
 ## YouTube
 Hier geht's zu meinem Kanal / Playlist
