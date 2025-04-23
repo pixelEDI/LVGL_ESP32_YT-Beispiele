@@ -988,10 +988,10 @@
       },
       "transform": {
         "translate": {
-          "x": -372.33333333333326,
-          "y": -281.00000000000006
+          "x": -531.8999999999999,
+          "y": -220.8333333333334
         },
-        "scale": 2.5
+        "scale": 1.75
       },
       "timeline": {
         "isEditorActive": false,
@@ -1018,6 +1018,6 @@
   "lvglExpandedPropertiesGroup": [],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
-  "flowZoom": 2.5,
+  "flowZoom": 1.75,
   "implementationLanguage": "C"
 }
