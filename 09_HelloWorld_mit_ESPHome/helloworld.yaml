@@ -1,0 +1,68 @@
+#        _          _          _ _
+#  _ __ (_)_  _____| | ___  __| (_)
+# | '_ \| \ \/ / _ \ |/ _ \/ _` | |
+# | |_) | |>  <  __/ |  __/ (_| | |
+# | .__/|_/_/\_\___|_|\___|\__,_|_|
+# |_|
+# https://links.pixeledi.eu
+# CYD mit ESPHome | 05.2025
+#
+
+esphome: 
+  name: cyd
+  friendly_name: cyd
+
+esp32:
+  board: esp32dev
+  framework: 
+    type: arduino 
+
+logger: 
+
+# eigene Font zum darstellen von Inhalten 
+# falls fehler kommt
+# pip install freetype-py --break-system-packages
+font:
+  - file: 'fonts/Roboto.ttf'
+    id: roboto20 
+    size: 20
+    glyphs: "!\"%()+=,-_.:°0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ abcdefghijklmnopqrstuvwxyzåäö"
+
+color:
+  - id: brown
+    hex: caa445
+
+output: 
+  - platform: ledc
+    pin: GPIO21
+    id: backlight_pwm
+
+light: 
+  - platform: monochromatic
+    output: backlight_pwm
+    name: Display Backlight
+    id: backlight
+    restore_mode: ALWAYS_ON
+
+spi:
+  - id: tft
+    clk_pin: GPIO14
+    mosi_pin: GPIO13
+    miso_pin: GPIO12
+  - id: touch
+    clk_pin: GPIO25
+    mosi_pin: GPIO32
+    miso_pin: GPIO39
+
+display:
+  - platform: ili9xxx
+    spi_id: tft
+    model: ili9341
+    dc_pin: GPIO2
+    cs_pin: GPIO15
+    rotation: 90
+    invert_colors: false
+    color_palette: 8BIT
+    lambda: |-
+      it.print(160, 140, id(roboto20), id(brown), TextAlign::BOTTOM_CENTER, "Hello pixeledi from esphome");
+      it.rectangle(0,0,320,240, id(brown));
